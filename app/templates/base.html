@@ -1,0 +1,17 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Talks{% endblock %}
+
+{% block navbar %}
+<a class="navbar-brand" href="{{ url_for('talks.index')}}">Talks</a>
+<ul class="nav navbar-nav">
+    <li><a href="{{url_for('talks.index')}}">Home</a></li>
+    <li><a href="{{url_for('talks.user',username='Frank AK')}}">Profile</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% block page_content %}{% endblock %}
+</div>
+{% endblock %}

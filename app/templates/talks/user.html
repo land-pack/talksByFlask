@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>User information!</title>
-</head>
-<body>
-<h1>Hello {{username}}!</h1>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block page_content %}
+<div class="page-header">
+    <h1>Hello, {{username}}!</h1>
+</div>
+{% endblock%}
